@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Portfolio | Responsive Image Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <span>VisualPortfolio</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="active">Gallery</a></li>
+                        <li><a href="#">Collections</a></li>
+                        <li><a href="#">Artists</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Premium Image Gallery</h1>
+            <p>Curated collection of high-resolution photography from award-winning artists worldwide. Filter by category or switch between grid and list views.</p>
+            
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <span class="stat-number">1,248</span>
+                    <span class="stat-label">Premium Images</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">64</span>
+                    <span class="stat-label">Photographers</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">12</span>
+                    <span class="stat-label">Categories</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">4K+</span>
+                    <span class="stat-label">Downloads</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Controls -->
+        <section class="controls">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Images</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+                <button class="filter-btn" data-filter="urban">Urban</button>
+                <button class="filter-btn" data-filter="travel">Travel</button>
+                <button class="filter-btn" data-filter="portrait">Portrait</button>
+                <button class="filter-btn" data-filter="abstract">Abstract</button>
+            </div>
+            
+            <div class="view-options">
+                <span style="font-size: 0.875rem; color: var(--secondary-color); margin-right: 0.5rem;">View:</span>
+                <div class="view-toggle">
+                    <button class="view-btn active" data-view="grid" title="Grid View">
+                        <i class="fas fa-th"></i>
+                    </button>
+                    <button class="view-btn" data-view="list" title="List View">
+                        <i class="fas fa-list"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section class="gallery-section">
+            <div class="gallery grid-view" id="imageGallery">
+                <!-- Gallery items will be loaded by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>VisualPortfolio</h3>
+                    <p>Premium curated photography from world-class artists. Our mission is to showcase exceptional visual storytelling across diverse genres.</p>
+                    <p>© 2026 VisualPortfolio. All rights reserved.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Categories</h3>
+                    <a href="#">Nature & Landscape</a>
+                    <a href="#">Urban & Architecture</a>
+                    <a href="#">Travel & Adventure</a>
+                    <a href="#">Portrait & People</a>
+                    <a href="#">Abstract & Artistic</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <a href="#">License Information</a>
+                    <a href="#">Photographer Guidelines</a>
+                    <a href="#">API Documentation</a>
+                    <a href="#">Help Center</a>
+                    <a href="#">Press Kit</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Newsletter</a>
+                    <a href="#">Contact Sales</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>All images are sourced from Unsplash and used under their license terms. This is a demonstration of responsive web design.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
