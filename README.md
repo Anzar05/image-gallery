@@ -62,6 +62,3 @@ Author
 Shaik Mahamood Anzar
 
 
-Dynamic Loading: Gallery items loaded via JavaScript
-
-Optimized Performance: Images are properly sized and optimized
